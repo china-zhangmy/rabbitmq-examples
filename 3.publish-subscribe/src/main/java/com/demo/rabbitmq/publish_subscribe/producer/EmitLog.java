@@ -1,9 +1,6 @@
 package com.demo.rabbitmq.publish_subscribe.producer;
 
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.MessageProperties;
+import com.rabbitmq.client.*;
 
 import java.util.Date;
 
@@ -17,10 +14,9 @@ public class EmitLog {
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
 
-        boolean durable = true; // declare queue durable
-        channel.queueDeclare(EXCHANGE_NAME, durable, false, false, null);
+        channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.FANOUT);
         String message = getMessages(args);
-        channel.basicPublish("", EXCHANGE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes("UTF-8"));
+        channel.basicPublish(EXCHANGE_NAME, "", null, message.getBytes("UTF-8"));
         System.out.println(" [X] sent  '" + message + "'");
 
         channel.close();
@@ -29,7 +25,7 @@ public class EmitLog {
 
     private static String getMessages(String[] strings) {
         if (strings.length < 1) {
-            return "Hello World .......... " + new Date().getTime();
+            return "info: Hello World " + new Date().getTime();
         }
 
         return joinStrings(strings, " ");

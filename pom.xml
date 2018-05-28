@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.demo.rabbitmq</groupId>
-    <artifactId>${project.artifactId}</artifactId>
-    <version>${project.version}</version>
+    <artifactId>rabbitmq-examples</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>RabbitMQ Examples</name>
@@ -14,7 +14,10 @@
     <modules>
         <module>1.hello-world</module>
         <module>2.work-queues</module>
-        <module>3.publish_subscribe</module>
+        <module>3.publish-subscribe</module>
+        <module>4.routing</module>
+        <module>5.rabbitmq-topics</module>
+        <module>6.rabbitmq-rpc</module>
     </modules>
 
     <properties>
@@ -22,8 +25,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <springframework.boot.version>2.0.2.RELEASE</springframework.boot.version>
-        <project.artifactId>rabbitmq-examples</project.artifactId>
-        <project.version>0.0.1-SNAPSHOT</project.version>
     </properties>
 
     <dependencyManagement>

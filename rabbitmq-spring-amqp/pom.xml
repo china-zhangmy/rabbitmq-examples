@@ -13,9 +13,11 @@
     <artifactId>rabbitmq-spring-amqp</artifactId>
     <packaging>pom</packaging>
 
-    <properties>
+    <name>RabbitMQ Spring AMQP</name>
 
-    </properties>
+    <modules>
+        <module>1.hello-world</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>

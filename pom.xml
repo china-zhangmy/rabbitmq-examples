@@ -12,7 +12,7 @@
     <name>RabbitMQ Examples</name>
 
     <modules>
-        <module>rabbitmq-java-client</module>
+        <module>rabbitmq-java</module>
         <module>rabbitmq-spring-amqp</module>
     </modules>
 

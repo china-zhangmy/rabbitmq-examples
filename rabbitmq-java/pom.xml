@@ -10,10 +10,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.demo.rabbitmq</groupId>
-    <artifactId>rabbitmq-java-client</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>rabbitmq-java</artifactId>
     <packaging>pom</packaging>
+
+    <name>RabbitMQ Java</name>
 
     <modules>
         <module>1.hello-world</module>

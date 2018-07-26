@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>abbitmq-spring-amqp-hello-world</artifactId>
+    <artifactId>rabbitmq-spring-amqp-hello-world</artifactId>
     <packaging>jar</packaging>
 
     <name>RabbitMQ Spring AMQP - Hello World</name>

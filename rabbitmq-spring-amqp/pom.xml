@@ -17,6 +17,7 @@
 
     <modules>
         <module>1.hello-world</module>
+        <module>2.work-queues</module>
     </modules>
 
     <dependencyManagement>
@@ -57,23 +58,6 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                     <showWarnings>true</showWarnings>
                 </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${springframework.boot.version}</version>
-                <configuration>
-                    <mainClass>com.demo.rabbitmq.hello_world.RabbitAmqpApplication</mainClass>
-                    <layout>ZIP</layout>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

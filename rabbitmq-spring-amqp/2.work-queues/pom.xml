@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rabbitmq-spring-amqp-hello-world</artifactId>
+    <artifactId>rabbitmq-spring-amqp-work-queues</artifactId>
     <packaging>jar</packaging>
 
-    <name>RabbitMQ Spring AMQP - Hello World</name>
+    <name>RabbitMQ Spring AMQP - Work Queues</name>
 
     <build>
         <plugins>
@@ -21,7 +21,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${springframework.boot.version}</version>
                 <configuration>
-                    <mainClass>com.demo.rabbitmq.hello_world.RabbitAmqpApplication</mainClass>
+                    <mainClass>com.demo.rabbitmq.work_queues.RabbitAmqpApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>

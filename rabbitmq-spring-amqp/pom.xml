@@ -18,6 +18,10 @@
     <modules>
         <module>1.hello-world</module>
         <module>2.work-queues</module>
+        <module>3.publish-subscribe</module>
+        <module>4.routing</module>
+        <module>5.topics</module>
+        <module>6.rpc</module>
     </modules>
 
     <dependencyManagement>
